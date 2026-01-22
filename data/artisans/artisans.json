@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Karnataka Handicrafts Emporium",
+    "description": "Traditional Mysore silk sarees and handicrafts made by local artisans",
+    "rating": 4.8,
+    "distance": "0.5 km away",
+    "category": "Local Artisans",
+    "subcategory": "handicrafts",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmyFqum9IofVyuimAUYm3PW21xAPFlyCB2Wg&s",
+    "location": "Chamrajpet",
+    "address": "123 MG Road, Chamrajpet, Mysore",
+    "hours": "10:00 AM - 8:00 PM",
+    "contact": "+91 98765 43210",
+    "email": "info@karnatakahandicrafts.com",
+    "story": "Family-run business for over 3 generations specializing in authentic Mysore silk sarees and traditional crafts.",
+    "highlights": [
+      "Authentic Mysore silk",
+      "Hand-block printing",
+      "Custom orders available"
+    ],
+    "price": "₹500 - ₹5000",
+    "verified": true,
+    "coordinates": [
+      12.2958,
+      76.6392
+    ],
+    "approved": true
+  },
+  {
+    "id": 2,
+    "name": "Mysore Sandalwood Carvers",
+    "description": "Expert craftsmen creating beautiful sandalwood sculptures and incense products",
+    "rating": 4.7,
+    "distance": "1.2 km away",
+    "category": "Local Artisans",
+    "subcategory": "woodwork",
+    "image": "https://cauverycrafts.com/wp-content/uploads/2021/02/Sirsi2.jpg",
+    "location": "Devaraja Mohalla",
+    "address": "456 Sayyaji Rao Road, Devaraja Mohalla, Mysore",
+    "hours": "9:00 AM - 7:00 PM",
+    "contact": "+91 87654 32109",
+    "email": "sandalwood@mysorecrafts.in",
+    "story": "Master carvers using traditional techniques passed down through generations to create exquisite sandalwood products.",
+    "highlights": [
+      "Sandalwood sculptures",
+      "Handcrafted incense",
+      "Eco-friendly products"
+    ],
+    "price": "₹200 - ₹3000",
+    "verified": true,
+    "coordinates": [
+      12.3058,
+      76.6492
+    ],
+    "approved": true
+  },
+  {
+    "name": "Karnataka Handicrafts Emporium",
+    "description": "Traditional Mysore silk sarees and handicrafts made by local artisans",
+    "rating": 4.8,
+    "distance": "0.0 km away",
+    "category": "Local Artisans",
+    "subcategory": "local-artisans",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmyFqum9IofVyuimAUYm3PW21xAPFlyCB2Wg&s",
+    "location": "Chamrajpet",
+    "address": "123 MG Road, Chamrajpet, Mysore",
+    "hours": "TBD",
+    "contact": "+91 98765 43210",
+    "email": "admin-added@example.com",
+    "story": "Added by administrator",
+    "highlights": [
+      "Authentic Mysore silk",
+      "Hand-block printing",
+      "Custom orders available"
+    ],
+    "price": "₹500 - ₹5000",
+    "verified": true,
+    "coordinates": [
+      12.2958,
+      76.6392
+    ],
+    "approved": true,
+    "id": 3
+  },
+  {
+    "name": "Mysore Sandalwood Carvers",
+    "description": "Expert craftsmen creating beautiful sandalwood sculptures and incense products",
+    "rating": 4.7,
+    "distance": "0.0 km away",
+    "category": "Local Artisans",
+    "subcategory": "local-artisans",
+    "image": "https://cauverycrafts.com/wp-content/uploads/2021/02/Sirsi2.jpg",
+    "location": "Devaraja Mohalla",
+    "address": "456 Sayyaji Rao Road, Devaraja Mohalla, Mysore",
+    "hours": "TBD",
+    "contact": "+91 87654 32109",
+    "email": "admin-added@example.com",
+    "story": "Added by administrator",
+    "highlights": [
+      "Sandalwood sculptures",
+      "Handcrafted incense",
+      "Eco-friendly products"
+    ],
+    "price": "₹200 - ₹3000",
+    "verified": true,
+    "coordinates": [
+      12.2958,
+      76.6392
+    ],
+    "approved": true,
+    "id": 4
+  }
+]

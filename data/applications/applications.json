@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Vijay Woodcarvings",
+    "email": "vijay.carve@example.com",
+    "phone": "+91 98765 65432",
+    "businessName": "Vijay's Wood Artistry",
+    "category": "artisans",
+    "subcategory": "woodwork",
+    "description": "Specializing in traditional Mysore wooden toys and sculptures using eco-friendly techniques.",
+    "location": "Chamaraja Puram",
+    "status": "pending",
+    "submittedDate": "2026-01-05",
+    "approved": false
+  },
+  {
+    "id": 2,
+    "name": "Geetha Ramanathan",
+    "email": "geetha.silk@example.com",
+    "phone": "+91 87654 32109",
+    "businessName": "Heritage Silk Creations",
+    "category": "artisans",
+    "subcategory": "textiles",
+    "description": "Creating authentic Mysore silk products with traditional designs passed down through generations.",
+    "location": "Sayyaji Rao Road",
+    "status": "pending",
+    "submittedDate": "2026-01-07",
+    "approved": false
+  }
+]

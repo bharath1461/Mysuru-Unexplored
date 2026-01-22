@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Mysore Palace Gardens",
+    "description": "Hidden gem with beautiful landscapes and lesser-known pathways within the palace complex",
+    "rating": 4.6,
+    "distance": "0.8 km away",
+    "category": "Hidden Places",
+    "subcategory": "gardens",
+    "image": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Mysore Palace Grounds",
+    "address": "Mysore Palace, Mysore",
+    "hours": "6:00 AM - 7:00 PM",
+    "contact": "+91 80 24567890",
+    "email": "info@mysorepalace.gov.in",
+    "story": "The palace gardens offer a peaceful retreat with beautiful flowers and historical significance that many tourists miss.",
+    "highlights": [
+      "Historical significance",
+      "Beautiful landscaping",
+      "Photography spot"
+    ],
+    "price": "₹40 per person",
+    "verified": true,
+    "coordinates": [
+      12.2958,
+      76.6392
+    ],
+    "approved": true
+  },
+  {
+    "id": 2,
+    "name": "Karanji Lake Butterfly Park",
+    "description": "A serene location with diverse butterfly species and peaceful surroundings",
+    "rating": 4.5,
+    "distance": "2.5 km away",
+    "category": "Hidden Places",
+    "subcategory": "nature",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Karanji Lake",
+    "address": "Mysore - Nanjangud Road, Mysore",
+    "hours": "8:00 AM - 6:00 PM",
+    "contact": "+91 80 24567891",
+    "email": "info@karanjilake.org",
+    "story": "A hidden nature reserve with over 70 butterfly species that many visitors overlook in favor of more popular attractions.",
+    "highlights": [
+      "Butterfly species",
+      "Educational",
+      "Nature walks"
+    ],
+    "price": "₹25 per person",
+    "verified": true,
+    "coordinates": [
+      12.2858,
+      76.6292
+    ],
+    "approved": true
+  },
+  {
+    "id": 3,
+    "name": "Sri Chamarajendra Zoological Gardens",
+    "description": "Historic zoo with a wide variety of animals and lush greenery",
+    "rating": 4.4,
+    "distance": "1.2 km away",
+    "category": "Hidden Places",
+    "subcategory": "nature",
+    "image": "https://images.unsplash.com/photo-1551640915-2924c0e2f0e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Zoo Circle",
+    "address": "Zoo Circle, Mysore",
+    "hours": "9:00 AM - 5:00 PM",
+    "contact": "+91 80 24567892",
+    "email": "info@mysorezoo.gov.in",
+    "story": "Established in 1892, this is one of the oldest zoos in India with a rich collection of animals and birds.",
+    "highlights": [
+      "Historic zoo",
+      "Variety of animals",
+      "Educational"
+    ],
+    "price": "₹45 per person",
+    "verified": true,
+    "coordinates": [
+      12.2938,
+      76.6412
+    ],
+    "approved": true
+  },
+  {
+    "id": 4,
+    "name": "Folk Museum Mysore",
+    "description": "Hidden cultural treasure showcasing traditional artifacts and folk art",
+    "rating": 4.3,
+    "distance": "0.6 km away",
+    "category": "Hidden Places",
+    "subcategory": "museum",
+    "image": "https://images.unsplash.com/photo-1532009877282-33402750051d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Mysore Palace Complex",
+    "address": "Mysore Palace Grounds, Mysore",
+    "hours": "10:00 AM - 5:00 PM",
+    "contact": "+91 80 24567893",
+    "email": "info@folk-museum.org",
+    "story": "A lesser-known museum containing rare artifacts, traditional costumes, and folk art pieces from Karnataka.",
+    "highlights": [
+      "Cultural artifacts",
+      "Folk art",
+      "Historical significance"
+    ],
+    "price": "₹35 per person",
+    "verified": true,
+    "coordinates": [
+      12.2978,
+      76.6382
+    ],
+    "approved": true
+  },
+  {
+    "id": 5,
+    "name": "Gokulam Park",
+    "description": "Quiet park with beautiful landscaping and peaceful walking paths",
+    "rating": 4.2,
+    "distance": "3.5 km away",
+    "category": "Hidden Places",
+    "subcategory": "parks",
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Gokulam",
+    "address": "Gokulam 1st Stage, Mysore",
+    "hours": "6:00 AM - 8:00 PM",
+    "contact": "+91 80 24567894",
+    "email": "info@gokulampark.org",
+    "story": "A peaceful retreat away from the city center with beautiful flower beds and walking paths.",
+    "highlights": [
+      "Peaceful environment",
+      "Walking paths",
+      "Flower gardens"
+    ],
+    "price": "Free entry",
+    "verified": true,
+    "coordinates": [
+      12.2758,
+      76.6192
+    ],
+    "approved": true
+  },
+  {
+    "id": 6,
+    "name": "Kukkarahalli Lake",
+    "description": "Tranquil lake perfect for morning walks and bird watching",
+    "rating": 4.5,
+    "distance": "2.8 km away",
+    "category": "Hidden Places",
+    "subcategory": "nature",
+    "image": "https://images.unsplash.com/photo-1505118380757-9c937e630b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Kukkarahalli",
+    "address": "Kukkarahalli Lake Road, Mysore",
+    "hours": "5:00 AM - 7:00 PM",
+    "contact": "+91 80 24567895",
+    "email": "info@kukkarahallilake.org",
+    "story": "A serene lake surrounded by walking paths and perfect for bird watching and peaceful morning walks.",
+    "highlights": [
+      "Bird watching",
+      "Morning walks",
+      "Tranquil environment"
+    ],
+    "price": "Free entry",
+    "verified": true,
+    "coordinates": [
+      12.2828,
+      76.6252
+    ],
+    "approved": true
+  }
+]

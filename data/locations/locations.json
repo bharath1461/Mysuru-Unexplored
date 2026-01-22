@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "name": "Chamundi Hills",
+    "description": "Sacred hill with the famous Chamundeshwari Temple and panoramic views of Mysore",
+    "rating": 4.8,
+    "distance": "12 km away",
+    "category": "Locations",
+    "subcategory": "religious",
+    "image": "https://images.unsplash.com/photo-1544735716-392fe2489ffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Karnataka",
+    "address": "Chamundi Hills, Mysore, Karnataka",
+    "hours": "4:00 AM - 10:00 PM",
+    "contact": "+91 80 24567892",
+    "email": "info@chamundihills.gov.in",
+    "story": "A spiritual and scenic destination with 1,000 steps to reach the temple, offering breathtaking views of Mysore city.",
+    "highlights": [
+      "Historic temple",
+      "Scenic views",
+      "Steps climb"
+    ],
+    "price": "Free entry",
+    "verified": true,
+    "coordinates": [
+      12.2858,
+      76.6192
+    ],
+    "approved": true,
+    "population": "High",
+    "crowdLevel": "Very Crowded",
+    "density": 0.9
+  },
+  {
+    "id": 2,
+    "name": "Brindavan Gardens",
+    "description": "Majestic terraced gardens with musical fountains located near Krishnarajasagara Dam",
+    "rating": 4.7,
+    "distance": "25 km away",
+    "category": "Locations",
+    "subcategory": "gardens",
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Krishnarajasagara",
+    "address": "Krishnarajasagara Dam, Srirangapatna, Karnataka",
+    "hours": "6:00 PM - 8:00 PM (fountain show)",
+    "contact": "+91 80 24567893",
+    "email": "info@brindavangardens.org",
+    "story": "These beautiful gardens were developed in the 1920s and feature musical fountains that light up in the evening.",
+    "highlights": [
+      "Musical fountains",
+      "Terraced gardens",
+      "Dam views"
+    ],
+    "price": "₹20 per person",
+    "verified": true,
+    "coordinates": [
+      12.2058,
+      76.6992
+    ],
+    "approved": true,
+    "population": "High",
+    "crowdLevel": "Crowded",
+    "density": 0.8
+  },
+  {
+    "id": 3,
+    "name": "Mysore Zoo",
+    "description": "One of the oldest zoos in India with a rich collection of animals",
+    "rating": 4.4,
+    "distance": "1.5 km away",
+    "category": "Locations",
+    "subcategory": "zoo",
+    "image": "https://images.unsplash.com/photo-1551640915-2924c0e2f0e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Mysore",
+    "address": "Zoo Circle, Mysore",
+    "hours": "9:00 AM - 5:00 PM",
+    "contact": "+91 80 24567894",
+    "email": "info@mysorezoo.gov.in",
+    "story": "Established in 1892, this zoo houses over 150 species of animals and birds.",
+    "highlights": [
+      "Historic zoo",
+      "Variety of animals",
+      "Family-friendly"
+    ],
+    "price": "₹45 per person",
+    "verified": true,
+    "coordinates": [
+      12.2938,
+      76.6412
+    ],
+    "approved": true,
+    "population": "High",
+    "crowdLevel": "Very Crowded",
+    "density": 0.9
+  },
+  {
+    "id": 4,
+    "name": "Mysore Palace",
+    "description": "Historic palace with stunning architecture and rich cultural heritage",
+    "rating": 4.8,
+    "distance": "0.5 km away",
+    "category": "Locations",
+    "subcategory": "heritage",
+    "image": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Mysore",
+    "address": "Mysore Palace, Mysore",
+    "hours": "10:00 AM - 5:00 PM",
+    "contact": "+91 80 24567895",
+    "email": "info@mysorepalace.gov.in",
+    "story": "The magnificent palace with Indo-Saracenic architecture is a major tourist attraction.",
+    "highlights": [
+      "Architectural marvel",
+      "Historical significance",
+      "Lighting display"
+    ],
+    "price": "₹40 per person",
+    "verified": true,
+    "coordinates": [
+      12.2958,
+      76.6392
+    ],
+    "approved": true,
+    "population": "High",
+    "crowdLevel": "Very Crowded",
+    "density": 0.95
+  },
+  {
+    "id": 5,
+    "name": "Kukkarahalli Lake",
+    "description": "Tranquil lake perfect for morning walks and bird watching",
+    "rating": 4.5,
+    "distance": "2.8 km away",
+    "category": "Locations",
+    "subcategory": "nature",
+    "image": "https://images.unsplash.com/photo-1505118380757-9c937e630b7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Mysore",
+    "address": "Kukkarahalli Lake Road, Mysore",
+    "hours": "5:00 AM - 7:00 PM",
+    "contact": "+91 80 24567896",
+    "email": "info@kukkarahallilake.org",
+    "story": "A serene lake surrounded by walking paths and perfect for bird watching.",
+    "highlights": [
+      "Bird watching",
+      "Morning walks",
+      "Tranquil environment"
+    ],
+    "price": "Free entry",
+    "verified": true,
+    "coordinates": [
+      12.2828,
+      76.6252
+    ],
+    "approved": true,
+    "population": "Low",
+    "crowdLevel": "Sparse",
+    "density": 0.2
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "itemId": 1,
+    "itemType": "artisans",
+    "userName": "Rajesh Kumar",
+    "userEmail": "rajesh.k@example.com",
+    "rating": 5,
+    "comment": "Absolutely wonderful experience! The Mysore silk saree I purchased is of exceptional quality.",
+    "date": "2026-01-10",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "itemId": 2,
+    "itemType": "places",
+    "userName": "Priya Nair",
+    "userEmail": "priya.n@example.com",
+    "rating": 4,
+    "comment": "Beautiful hidden gardens at the palace. Much quieter than the main palace area and perfect for a peaceful walk.",
+    "date": "2026-01-09",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "itemId": 1,
+    "itemType": "experiences",
+    "userName": "Amit Sharma",
+    "userEmail": "amit.s@example.com",
+    "rating": 5,
+    "comment": "The sunrise yoga session was transformative. The instructor was knowledgeable and the setting was perfect.",
+    "date": "2026-01-08",
+    "verified": true
+  }
+]

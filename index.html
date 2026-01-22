@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysuru Unexplored - Decentralizing Tourism in Mysore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Mysuru Unexplored</h1>
+                    <p>Heritage • Culture • Sustainability</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <button class="close-menu">&times;</button>
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#explore" class="nav-link" data-page="explore">Explore</a></li>
+                <li><a href="#artisans" class="nav-link" data-page="artisans">Artisans</a></li>
+                <li><a href="#sustainability" class="nav-link" data-page="sustainability">Sustainability</a></li>
+                <li><a href="#maps" class="nav-link" data-page="maps">Maps</a></li>
+                <li id="admin-nav-item" style="display: none;"><a href="#admin" class="nav-link" data-page="admin">Admin Panel</a></li>
+                <li><a href="#login" class="nav-link" id="main-login-btn">Login</a></li>
+                <li><a href="#artisan-login" class="btn-artisan-outline" id="artisan-login-btn">Artisan Login</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Discover the Authentic Mysuru</h2>
+                <p>Hidden gems, local artisans, and cultural experiences</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search artisans, hidden places, traditional food...">
+                    <button class="search-btn" id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <h2>Explore Mysuru</h2>
+                <div class="category-grid-wrapper">
+                    <button class="scroll-btn scroll-left" onclick="scrollCategoryGrid(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <div class="category-grid">
+                        <div class="category-card" data-category="hidden-places" onclick="showCategory('hidden-places')">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Hidden Places</h3>
+                            <p>Secret locations</p>
+                        </div>
+                        <div class="category-card" data-category="local-artisans" onclick="showCategory('local-artisans')">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Local Artisans</h3>
+                            <p>Craftspeople</p>
+                        </div>
+                        <div class="category-card" data-category="cultural-experiences" onclick="showCategory('cultural-experiences')">
+                            <i class="fas fa-theater-masks"></i>
+                            <h3>Cultural Experiences</h3>
+                            <p>Traditions</p>
+                        </div>
+                        <div class="category-card" data-category="traditional-food" onclick="showCategory('traditional-food')">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Traditional Food</h3>
+                            <p>Authentic flavors</p>
+                        </div>
+                    </div>
+                    <button class="scroll-btn scroll-right" onclick="scrollCategoryGrid(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="container">
+                <h2>Featured Local Artisans & Gems</h2>
+                <div class="featured-grid" id="featured-grid">
+                    <!-- Featured items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="explore-title">Explore Mysuru</h2>
+                <button class="back-btn" onclick="goToPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+            <div class="explore-filters">
+                <select id="location-filter">
+                    <option value="all">All Locations</option>
+                    <option value="agrahara">Agrahara</option>
+                    <option value="nanjangud">Nanjangud</option>
+                    <option value="bannimantap">Bannimantap</option>
+                    <option value="chamrajpet">Chamrajpet</option>
+                    <option value="devarajamohalla">Devaraja Mohalla</option>
+                </select>
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="hidden-places">Hidden Places</option>
+                    <option value="local-artisans">Local Artisans</option>
+                    <option value="cultural-experiences">Cultural Experiences</option>
+                    <option value="traditional-food">Traditional Food</option>
+                </select>
+            </div>
+            <div class="explore-grid" id="explore-grid">
+                <!-- Explore items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Artisans Section -->
+    <section id="artisans" class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Local Artisans</h2>
+                <div>
+                    <button class="back-btn" onclick="goToPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+                    <button class="btn-primary" onclick="showArtisanRegistration()">Become an Artisan</button>
+                </div>
+            </div>
+            <div class="artisans-grid" id="artisans-grid">
+                <!-- Artisan items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <section id="maps" class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Mysuru Map</h2>
+                <button class="back-btn" onclick="goToPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+            <div class="maps-container">
+                <div id="main-map" style="height: 500px; width: 100%; border-radius: 12px;"></div>
+                <div class="map-controls">
+                    <button class="btn-primary" onclick="toggleHeatmap()">Toggle Heatmap</button>
+                    <button class="btn-secondary" onclick="showAllCategories()">Show All</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sustainable Tourism Focus</h2>
+                <button class="back-btn" onclick="goToPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+            <div class="sustainability-content">
+                <div class="sustainability-card">
+                    <img src="https://images.unsplash.com/photo-1743517894265-c86ab035adef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400" alt="Artisan Collective">
+                    <h3>Local Artisan Collective</h3>
+                    <p>Authentic local crafts</p>
+                    <div class="rating">
+                        <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
+                        <span>4.7/5</span>
+                    </div>
+                </div>
+                <div class="sustainability-card">
+                    <img src="https://images.unsplash.com/photo-1662904262396-699c0003d88f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400" alt="Weaving Center">
+                    <h3>Traditional Weaving Center</h3>
+                    <p>Preserving traditional weaving</p>
+                    <div class="rating">
+                        <span class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                        <span>4.5/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel Section -->
+    <section id="admin" class="page-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Admin Dashboard</h2>
+                <button class="back-btn" onclick="goToPage('home')"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+            <div class="admin-dashboard">
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <h3>Total Listings</h3>
+                        <p id="total-listings-count">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>New Applications</h3>
+                        <p id="new-applications-count">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Reviews Today</h3>
+                        <p id="reviews-today-count">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Verified Listings</h3>
+                        <p id="verified-listings-count">0</p>
+                    </div>
+                </div>
+                <div class="admin-controls">
+                    <h3>Quick Actions</h3>
+                    <div class="control-buttons">
+                        <button class="btn-primary" onclick="showAddListingForm()">Add New Listing</button>
+                        <button class="btn-secondary" onclick="showPendingApplications()">Review Applications</button>
+                        <button class="btn-secondary" onclick="showEditListings()">Edit Existing</button>
+                        <button class="btn-secondary" onclick="showAnalytics()">View Analytics</button>
+                    </div>
+                </div>
+                <div id="admin-listings-container">
+                    <!-- Listings will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <p class="switch-form">
+                Don't have an account? <a href="#" onclick="showRegisterForm()">Register</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('register-modal')">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name:</label>
+                    <input type="text" id="reg-name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email:</label>
+                    <input type="email" id="reg-email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="reg-password">Password:</label>
+                    <input type="password" id="reg-password" required placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="user-type">User Type:</label>
+                    <select id="user-type">
+                        <option value="tourist">Tourist</option>
+                        <option value="artisan">Artisan</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+            <p class="switch-form">
+                Already have an account? <a href="#" onclick="showLoginForm()">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Artisan Registration Modal -->
+    <div id="artisan-registration-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('artisan-registration-modal')">&times;</span>
+            <h2>Become an Artisan</h2>
+            <form id="artisan-registration-form">
+                <div class="form-group">
+                    <label for="artisan-name">Business Name:</label>
+                    <input type="text" id="artisan-name" required placeholder="Enter business/art name">
+                </div>
+                <div class="form-group">
+                    <label for="artisan-type">Artisan Type:</label>
+                    <select id="artisan-type">
+                        <option value="handicrafts">Handicrafts</option>
+                        <option value="textiles">Textiles</option>
+                        <option value="sculpture">Sculpture</option>
+                        <option value="food">Food & Cuisine</option>
+                        <option value="performance">Performance Arts</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="artisan-location">Location:</label>
+                    <input type="text" id="artisan-location" required placeholder="Enter your location">
+                </div>
+                <div class="form-group">
+                    <label for="artisan-contact">Contact:</label>
+                    <input type="tel" id="artisan-contact" required placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="artisan-description">Description:</label>
+                    <textarea id="artisan-description" rows="4" placeholder="Describe your craft/business"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Add Listing Modal -->
+    <div id="admin-add-listing-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('admin-add-listing-modal')">&times;</span>
+            <h2>Add New Listing</h2>
+            <form id="admin-add-listing-form">
+                <div class="form-group">
+                    <label for="listing-name">Name:</label>
+                    <input type="text" id="listing-name" required placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="listing-category">Category:</label>
+                    <select id="listing-category">
+                        <option value="hidden-places">Hidden Places</option>
+                        <option value="local-artisans">Local Artisans</option>
+                        <option value="cultural-experiences">Cultural Experiences</option>
+                        <option value="traditional-food">Traditional Food</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="listing-location">Location:</label>
+                    <input type="text" id="listing-location" required placeholder="Enter location">
+                </div>
+                <div class="form-group">
+                    <label for="listing-address">Address:</label>
+                    <input type="text" id="listing-address" required placeholder="Enter full address">
+                </div>
+                <div class="form-group">
+                    <label for="listing-contact">Contact:</label>
+                    <input type="text" id="listing-contact" required placeholder="Enter contact info">
+                </div>
+                <div class="form-group">
+                    <label for="listing-rating">Rating (1-5):</label>
+                    <input type="number" id="listing-rating" min="1" max="5" step="0.1" required placeholder="Enter rating">
+                </div>
+                <div class="form-group">
+                    <label for="listing-price">Price Range:</label>
+                    <input type="text" id="listing-price" required placeholder="Enter price range">
+                </div>
+                <div class="form-group">
+                    <label for="listing-image">Image URL:</label>
+                    <input type="text" id="listing-image" required placeholder="Enter image URL">
+                </div>
+                <div class="form-group">
+                    <label for="listing-image-upload">Or Upload Image:</label>
+                    <input type="file" id="listing-image-upload" accept="image/*" placeholder="Upload image">
+                    <div class="image-preview" id="image-preview"></div>
+                </div>
+                <div class="form-group">
+                    <label for="listing-highlights">Highlights (comma separated):</label>
+                    <input type="text" id="listing-highlights" placeholder="e.g., Heritage, Handcrafted, Certified">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="listing-verified"> Verified
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="listing-description">Description:</label>
+                    <textarea id="listing-description" rows="4" required placeholder="Enter description"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Add Listing</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <!-- Leaflet JS for maps -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.min.js"></script>
+</body>
+</html>

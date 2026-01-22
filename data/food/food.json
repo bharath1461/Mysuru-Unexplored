@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mysore Masala Dosa Corner",
+    "description": "Authentic Mysore masala dosa with the secret family recipe served at a humble eatery",
+    "rating": 4.7,
+    "distance": "0.7 km away",
+    "category": "Traditional Food",
+    "subcategory": "street food",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Sayyaji Rao Road",
+    "address": "Opposite Clock Tower, Sayyaji Rao Road, Mysore",
+    "hours": "7:00 AM - 10:00 PM",
+    "contact": "+91 98765 54321",
+    "email": "mmdc@mysorefood.com",
+    "story": "Run by the same family for 40 years, this small stall serves the most authentic Mysore masala dosa with a secret chutney recipe.",
+    "highlights": [
+      "Authentic recipe",
+      "Affordable prices",
+      "Local favorite"
+    ],
+    "price": "₹50 - ₹100",
+    "verified": true,
+    "coordinates": [
+      12.3008,
+      76.6402
+    ],
+    "approved": true
+  },
+  {
+    "id": 2,
+    "name": "Heritage Sweet Shop",
+    "description": "Traditional Mysore Pak and other sweets made using century-old recipes",
+    "rating": 4.9,
+    "distance": "1.5 km away",
+    "category": "Traditional Food",
+    "subcategory": "sweets",
+    "image": "https://images.unsplash.com/photo-1507690472737-949e5e534a72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjYyMTQ1MTh8&ixlib=rb-4.1.0&q=80&w=400",
+    "location": "Devaraja Market",
+    "address": "Devaraja Market Complex, Mysore",
+    "hours": "9:00 AM - 9:00 PM",
+    "contact": "+91 87654 98765",
+    "email": "heritagesweets@mysorepak.in",
+    "story": "Established in 1950, this shop continues to make Mysore Pak using the same traditional methods and ingredients.",
+    "highlights": [
+      "Award-winning sweets",
+      "Hygienic preparation",
+      "Packaged options"
+    ],
+    "price": "₹200 - ₹800 per kg",
+    "verified": true,
+    "coordinates": [
+      12.2938,
+      76.6352
+    ],
+    "approved": true
+  }
+]
